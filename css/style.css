@@ -1,0 +1,16 @@
+section#icons {
+	margin-top: 5%; 
+}
+section#example {
+	height: 100vh;
+	padding-top: 200px;
+}
+.box {
+	height: 100px;
+	border: 2px solid #000
+}
+.box_in {
+	height: 50px;
+	border: solid #aeaeae;
+	background-color: green;   
+}
