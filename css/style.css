@@ -6,7 +6,6 @@
    } 
    .menu {
    	margin: 10px;
-
    }
 
  a {
@@ -15,5 +14,18 @@
  	font-size: 20px;
  	font-stretch: expanded;
  }
-
+    .box {
+    	display: block;
+    	width: 300px;
+    	height: 400px;
+    	border: 2px solid grey;
+    	background-color: #fff;
+    	position: fixed;
+    	left: 50%;
+    	margin-left: -150px;
+    	top: 50%;
+    	margin-top: -200px;
+    	padding: 20px 30px;
+    	
+    }
 
