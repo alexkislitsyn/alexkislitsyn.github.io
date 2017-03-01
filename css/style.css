@@ -228,6 +228,26 @@ header {
 .process-btn:hover {
   box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
 }
+@keyframes plus {
+  from {
+    -webkit-transform: rotate(90deg) translateY(8px);
+    -ms-transform: rotate(90deg) translateY(8px);
+    -o-transform: rotate(90deg) translateY(8px);
+    transform: rotate(90deg) translateY(8px);
+  }
+  50% {
+    -webkit-transform: rotate(150deg) translateY(8px);
+    -ms-transform: rotate(150deg) translateY(8px);
+    -o-transform: rotate(150deg) translateY(8px);
+    transform: rotate(150deg) translateY(8px);
+  }
+  to {
+    -webkit-transform: rotate(100deg) translateY(8px);
+    -ms-transform: rotate(100deg) translateY(8px);
+    -o-transform: rotate(100deg) translateY(8px);
+    transform: rotate(100deg) translateY(8px);
+  }
+}
 .btn-plus {
   vertical-align: middle;
   margin-right: 5px;
@@ -659,4 +679,30 @@ Modal Window
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+/* Анимация */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-name: move;
+  -o-animation-name: move;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+@keyframes move {
+  0% {
+    margin-left: 0;
+    border-radius: 50px;
+  }
+  50% {
+    margin-left: 50px;
+    border-radius: 0;
+  }
+  100% {
+    margin-left: 150px;
+    border-radius: 50px;
+  }
 }

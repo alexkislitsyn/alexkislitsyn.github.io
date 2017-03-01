@@ -228,7 +228,8 @@ header {
 			margin-bottom: 20px;  
 		}
 		&:hover {
-			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.40); 
+			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.40);
+
 		}
 
 	}
@@ -251,6 +252,8 @@ header {
 		font-size: 16px;
 		&:hover {
 			box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
+			 .wow_fadeIn
+
 		}
 	}
 }
@@ -724,4 +727,33 @@ Modal Window
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+/* Анимация */
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	-webkit-animation-name: move;
+	-o-animation-name: move;
+	animation-name: move;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 5;
+}
+
+@keyframes move {
+ 0% {
+ 	margin-left: 0;
+ 	border-radius: 50px;
+ }
+ 50% {
+ 	margin-left: 50px;
+ 	border-radius: 0;
+ }
+ 100% {
+ 	margin-left: 150px;
+ 	border-radius: 50px;
+ }
 }
