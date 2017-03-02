@@ -187,7 +187,7 @@ header {
 .process-box {
   color: #ffffff;
   text-align: center;
-  padding: 25px;
+  padding: 27px;
   padding-top: 35px;
 }
 .process-box i.fa {
@@ -227,26 +227,6 @@ header {
 }
 .process-btn:hover {
   box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
-}
-@keyframes plus {
-  from {
-    -webkit-transform: rotate(90deg) translateY(8px);
-    -ms-transform: rotate(90deg) translateY(8px);
-    -o-transform: rotate(90deg) translateY(8px);
-    transform: rotate(90deg) translateY(8px);
-  }
-  50% {
-    -webkit-transform: rotate(150deg) translateY(8px);
-    -ms-transform: rotate(150deg) translateY(8px);
-    -o-transform: rotate(150deg) translateY(8px);
-    transform: rotate(150deg) translateY(8px);
-  }
-  to {
-    -webkit-transform: rotate(100deg) translateY(8px);
-    -ms-transform: rotate(100deg) translateY(8px);
-    -o-transform: rotate(100deg) translateY(8px);
-    transform: rotate(100deg) translateY(8px);
-  }
 }
 .btn-plus {
   vertical-align: middle;
@@ -291,6 +271,9 @@ i.fa-camera-retro {
   height: 360px;
   position: relative;
 }
+.works-box img {
+  width: 100%;
+}
 .signature {
   opacity: 0;
   position: absolute;
@@ -334,10 +317,11 @@ i.fa-camera-retro {
 }
 /* Services section */
 .services-list {
+  text-align: center;
   list-style: none;
 }
 .services-list-item {
-  display: block;
+  display: inline-block;
   margin: 5px auto;
   width: 100px;
   height: 100px;
@@ -704,5 +688,85 @@ Modal Window
   100% {
     margin-left: 150px;
     border-radius: 50px;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .services-btn {
+    padding: 15px 30px;
+    margin-bottom: 7%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-105px);
+    -ms-transform: translateX(-105px);
+    -o-transform: translateX(-105px);
+    transform: translateX(-105px);
+  }
+  .works-box {
+    height: 360px;
+    width: 360px;
+    margin-top: 30px;
+  }
+  .works-box-img {
+    padding-left: 70px;
+    margin: 0 auto;
+  }
+  .process-box {
+    margin-top: 75px;
+  }
+  .main-tet h1 {
+    font-size: 24px;
+  }
+  .section-header h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .process-box {
+    margin-top: 75px;
+    width: 330px;
+    margin-left: 50%;
+    margin-top: 15%;
+    -webkit-transform: translateX(-165px);
+    -ms-transform: translateX(-165px);
+    -o-transform: translateX(-165px);
+    transform: translateX(-165px);
+  }
+  .works-box {
+    height: 360px;
+    width: 360px;
+    margin-top: 30px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-165px);
+    -ms-transform: translateX(-165px);
+    -o-transform: translateX(-165px);
+    transform: translateX(-165px);
+  }
+  .img-responsive {
+    margin-left: 50%;
+    -webkit-transform: translateX(-180px);
+    -ms-transform: translateX(-180px);
+    -o-transform: translateX(-180px);
+    transform: translateX(-180px);
+  }
+  .services-btn {
+    padding: 15px 50px;
+    margin-bottom: 7%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-105px);
+    -ms-transform: translateX(-105px);
+    -o-transform: translateX(-105px);
+    transform: translateX(-105px);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .process-box {
+    margin-top: 75px;
+  }
+  .works-box {
+    height: 220px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .works-box {
+    height: 294px;
   }
 }
