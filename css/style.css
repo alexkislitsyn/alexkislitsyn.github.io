@@ -720,6 +720,15 @@ Modal Window
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
+  .main-form {
+    width: 330px;
+    margin-left: 50%;
+    margin-top: 15%;
+    -webkit-transform: translateX(-165px);
+    -ms-transform: translateX(-165px);
+    -o-transform: translateX(-165px);
+    transform: translateX(-165px);
+  }
   .process-box {
     margin-top: 75px;
     width: 330px;

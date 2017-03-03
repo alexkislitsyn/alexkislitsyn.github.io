@@ -281,17 +281,15 @@ header {
 .box {
 	&-tomi {
 		background-color: @bg-tomi;
-
 	}
     &-koimona {
 		background-color: @bg-koimona;
-
-	}&-koire {
+	}
+	&-koire {
 		background-color: @bg-koire;
-
-	}&-lara {
+	}
+	&-lara {
 		background-color: @bg-lara;
-
 	}
 
 }
@@ -409,7 +407,7 @@ i.fa-camera-retro {
 .panel-default>.panel-heading {
 	h4 {
 		color: @base-red;
-		.opn-bold
+		.opn-bold;
 	}
 }
 
@@ -800,6 +798,15 @@ Modal Window
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	.main-form {
+    width: 330px;
+    margin-left: 50%;
+    margin-top: 15%;
+     -webkit-transform: translateX(-165px); 
+    -ms-transform: translateX(-165px);
+    -o-transform: translateX(-165px);
+    transform: translateX(-165px);
+		}
 		.process-box {
 		margin-top: 75px;
 		width: 330px;
