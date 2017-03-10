@@ -720,6 +720,9 @@ Modal Window
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
+  .section-header {
+    margin-top: 10%;
+  }
   .main-form {
     width: 330px;
     margin-left: 50%;
