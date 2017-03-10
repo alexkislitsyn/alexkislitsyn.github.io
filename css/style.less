@@ -870,3 +870,43 @@ Modal Window
 @media (min-width: 1601px) {
 	
 }
+
+.overlay-nav {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.8);
+	ul {
+		padding-top: 10%;
+		line-height: 2.5;
+		text-align: center;
+		list-style: none;
+		li a {
+			-webkit-transition: all 0.2s;
+			-o-transition: all 0.2s;
+			transition: all 0.2s;
+			&:hover {
+				text-decoration: none;
+				color: @base-red;
+			}
+			color: #fff;
+			font-size: 36px;
+			.opn-bold;
+
+		}
+	}
+}
+
+.close-nav {
+	position: fixed;
+	font-size: 50px;
+	top: 5%;
+	right: 5%;
+	color: #fff;
+	&:hover {
+		cursor: pointer;
+	}
+}
