@@ -10,10 +10,12 @@
 /* Base colors */
 /* Base settings*/
 body {
+  overflow-x: hidden;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #626262;
+  position: relative;
 }
 input:focus,
 button:focus,
@@ -52,14 +54,14 @@ header {
   text-align: center;
   width: 155px;
   height: 55px;
-  border: 3px solid #706b73;
+  border: 3px solid #ffffff;
   line-height: 49px;
 }
 .main-logo-border p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 36px;
-  color: #706b73;
+  color: #ffffff;
 }
 .main-logo-border p span {
   color: #fc7b5d;
@@ -71,6 +73,7 @@ header {
   height: 55px;
 }
 .main-text {
+  color: white;
   margin-top: 10%;
   text-align: center;
 }
@@ -691,6 +694,18 @@ Modal Window
   }
 }
 @media (min-width: 0px) and (max-width: 480px) {
+  .video-container {
+    display: none;
+  }
+  .main-logo-border {
+    border: 3px solid #706b73;
+  }
+  .main-logo-border p {
+    color: #706b73;
+  }
+  .main-text {
+    color: #706b73;
+  }
   .services-btn {
     padding: 15px 30px;
     margin-bottom: 7%;
@@ -720,6 +735,18 @@ Modal Window
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
+  .video-container {
+    display: none;
+  }
+  .main-logo-border {
+    border: 3px solid #706b73;
+  }
+  .main-logo-border p {
+    color: #706b73;
+  }
+  .main-text {
+    color: #706b73;
+  }
   .section-header {
     margin-top: 10%;
   }
@@ -770,6 +797,18 @@ Modal Window
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .video-container {
+    display: none;
+  }
+  .main-logo-border {
+    border: 3px solid #706b73;
+  }
+  .main-logo-border p {
+    color: #706b73;
+  }
+  .main-text {
+    color: #706b73;
+  }
   .process-box {
     margin-top: 75px;
   }
@@ -819,4 +858,60 @@ Modal Window
 }
 .close-nav:hover {
   cursor: pointer;
+}
+/* Video-bg */
+header {
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+/* Parallax */
+.layer img {
+  width: 350px;
+}
+#layer-1 {
+  margin-left: 50%;
+  margin-top: 20%;
+}
+#layer-3 {
+  margin-top: -10%;
+  margin-left: 30%;
+}
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
 }
